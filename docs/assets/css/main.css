@@ -3230,14 +3230,14 @@ input, select, textarea {
 		#wrapper > .bg {
 			position: absolute;
 			inset: 0;
-			width: 70%;
+			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/main-page.JPG");
+			background-image: url("../../images/bg.jpg");
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
-			background-attachment: scroll;
+			/*background-attachment: scroll;*/
 			z-index: -1;
 		}
 
@@ -3246,6 +3246,16 @@ input, select, textarea {
 				width: 100vw;
 				height: 100vh;
 			}
+			
+			
+			.intro-bg {
+				display: block;
+				width: 100%;
+				height: auto;  
+				object-fit: contain;
+				pointer-events: none; 
+			}
+
 
 		#wrapper.fade-in:before {
 			pointer-events: none;
@@ -3281,6 +3291,10 @@ input, select, textarea {
 		}
 
 /* Intro */
+
+
+
+
 
 	#intro {
 		color: #ffffff;
